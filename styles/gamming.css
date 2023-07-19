@@ -76,13 +76,131 @@ body {
     padding: 10px 20px;
 }
 
+/* banner styles here */
+.banner {
+    height: 80vh;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
+.banner-content .banner-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.banner-content .banner-heading {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.banner-list li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: lowercase;
+}
 
+.btn-primary {
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 10px 20px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    border: 0;
+    color: #fff;
+}
 
+.btn-active {
+    background: #4EC5F7;
+}
 
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* Download Section styles */
+.download-section {
+    padding: 90px 0;
+   
+}
+.download-section-main {
+     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.download-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.download-section-img {
+    width: 50%;
+}
+
+.download-section-img img {
+    width: 100%;
+}
+
+.download-section-content {
+    width: 50%;
+    text-align: right;
+}
+
+.download-section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.download-section-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.download-section-btn {
+    margin: 20px 0;
+}
+
+.donwload-purpose {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.download-unleash {
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+
+}
 
 
 
@@ -103,22 +221,66 @@ body {
 /* Responsive Styels */
 /* Mobile Device */
 @media screen and (max-width: 425px) {
+
     .nav-container,
-    .nav-menu-container
+    .nav-menu-container,
+    .download-section-container
     {
         flex-direction: column;
     }
+
+    .download-section-content {
+        text-align: center;
+    }
+    .download-unleash {
+        font-size: 1.8rem;
+    }
+
+    .banner-container {
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
     .nav-menu-container {
         margin-top: 20px;
     }
-    
+
+    .banner-content .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-content,
+    .banner-img,
+    .banner,
+    .download-section-content,
+    .download-section-img
+     {
+        width: 100%;
+    }
+
 }
+
+
+
+
+
+
+
+
 
 /* Tablate Device */
 @media screen and (max-width: 768px) {
-    .nav-container
-    {
+    .nav-container,
+    .download-section-container {
         flex-direction: column;
+    }
+    .download-section-content {
+        text-align: center;
+    }
+    .download-section-img,
+    .download-section-content
+    {
+        width: 100%;
     }
 
     .nav-menu-container {
